@@ -1,0 +1,91 @@
+/* Reset básico */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização global */
+body {
+    background-color: #0a2540; /* Azul escuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Georgia', serif;
+    padding: 140rem 0;
+}
+
+/* Estilização da carta */
+.carta {
+    background: #fffef0; /* Fundo parecido com papel */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    line-height: 1.6;
+    text-align: left;
+    width: 60%;
+    max-width: 600px;
+    margin: 500px 0;
+}
+
+/* Título da carta */
+.carta h1 {
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 1.8em;
+    color: #6b4226;
+    text-align: center;
+}
+
+/* Parágrafos da carta */
+.carta p {
+    font-size: 1em;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+/* Assinatura */
+.carta strong {
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 1.2em;
+    color: #6b4226;
+}
+
+/* RESPONSIVIDADE */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .carta {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .carta h1 {
+        font-size: 1.5em;
+    }
+
+    .carta p {
+        font-size: 0.9em;
+    }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+    .carta {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .carta h1 {
+        font-size: 1.2em;
+    }
+
+    .carta p {
+        font-size: 0.85em;
+    }
+
+    .carta strong {
+        font-size: 1em;
+    }
+}
